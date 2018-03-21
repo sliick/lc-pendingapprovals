@@ -1,0 +1,16 @@
+<aura:component controller="myApprovals" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+<aura:attribute name="greeting" type="String" default="World" />
+    <aura:attribute name="targets" type="List" />
+
+     <aura:set attribute="body">
+<aura:iteration var="targetId" items="{!v.targets}" indexVar="i">
+   
+    
+     <c:myApprovalItems approvalId="{!targetId}" />
+</aura:iteration>
+    </aura:set>
+    
+</aura:component>

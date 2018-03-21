@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PendingApprovals</fullName>
+    <types>
+        <members>myApprovalItems</members>
+        <members>myApprovals</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>myApprovalItems</members>
+        <members>myApprovals</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <version>41.0</version>
+</Package>

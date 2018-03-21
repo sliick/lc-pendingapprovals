@@ -1,0 +1,13 @@
+<aura:component controller="myApprovalItems" implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="approvalId" type="Id" />
+    <aura:attribute name="resultMap" type="Map" />
+    
+    <p>Approval Record: <a href="{!'/' + v.approvalId}"> {!v.resultMap.recordName} </a></p>
+    <p>RecordType: {!v.resultMap.recordType} </p>
+    <p>SubmittedBy: {!v.resultMap.submittedBy} </p>
+ 
+    
+    
+</aura:component>
